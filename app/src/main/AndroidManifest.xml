@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.zeo_x.management">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.MenuActivity" />
+        <activity android:name=".ui.activity.CheckCZActivity" />
+        <activity android:name=".ui.activity.CheckSBActivity" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".ui.activity.ReportRepairActivity" />
+        <activity
+            android:name=".ui.activity.QRCodeActivity"
+            android:label="@string/scan_qr_code"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".ui.activity.QueryEquActivity" />
+        <activity android:name=".ui.activity.EquDetailActivity" />
+        <activity android:name=".ui.activity.EquListActivity" />
+        <activity android:name=".ui.activity.RepairDoneActivity" />
+        <activity android:name=".ui.activity.RepairCheckActivity" />
+        <activity android:name=".ui.activity.ReportDBXXActivity" />
+        <activity android:name=".ui.activity.DBXXCheckActivity" />
+        <activity android:name=".ui.activity.QueryContractActivity" />
+        <activity android:name=".ui.activity.ContractDetailActivity" />
+        <activity android:name=".ui.activity.ContractListActivity" />
+        <activity android:name="com.pgyersdk.activity.FeedbackActivity" />
+        <activity android:name=".ui.activity.HelpActivity" />
+        <activity android:name=".ui.activity.ManageContractActivity" />
+        <activity android:name=".ui.activity.UploadContractActivity"/>
+    </application>
+
+</manifest>

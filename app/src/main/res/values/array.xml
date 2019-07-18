@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subjects">
+        <item>所属项目</item>
+        <item>固定资产申请卡</item>
+        <item>技术规格书</item>
+        <item>招标议标文件</item>
+        <item>投标厂家资料</item>
+        <item>中标通知书</item>
+        <item>议标纪要</item>
+        <item>中标厂家及投标文件</item>
+        <item>技术协议</item>
+        <item>合同文本</item>
+        <item>进口设备免税资料</item>
+        <item>发票复印件</item>
+        <item>设备开箱单</item>
+        <item>安装过程点检资料</item>
+        <item>设备培训资料</item>
+        <item>设备点检标准</item>
+        <item>设备操作规程</item>
+        <item>设备完成工交接单</item>
+    </string-array>
+</resources>
